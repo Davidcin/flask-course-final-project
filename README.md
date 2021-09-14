@@ -11,5 +11,5 @@ For now there is fully functional login and sign-up.
 THIS PROJECT IS NOT FINISHED YET. THERE WILL BE SOME NEW FEATURES AND IMPROVEMENTS.
 
 Will be added:
-1)Search
-2)Add new item feature
+1) Search
+2) "Add new items" feature

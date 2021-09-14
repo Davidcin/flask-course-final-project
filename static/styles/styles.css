@@ -1,0 +1,191 @@
+body{
+	background: white;
+	font-family: 'Noto Sans KR', sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+header{
+	background-color: black;
+	background-image: url("../images/headerback.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: white;
+	padding: 20px;
+}
+
+section{
+	background: white;
+	color: grey;
+	padding: 20px;
+}
+
+body a:hover{
+	color: silver;
+}
+
+body a:active{
+	color: darkgray;
+}
+
+body a{
+	text-decoration: none;
+}
+
+.navbar ul li{
+	display: inline-block;
+	margin: 0px;
+	margin-top: 8px;
+	padding: 0px 25px;
+	font-size: 21px;
+}
+
+.navbar ul{
+	padding: 0px;
+	margin: 0px;
+}
+
+.navbar a{
+	color: white;
+}
+
+
+.logo{
+	background-size: 300px;
+	background: transparent;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	margin-top: -15px;
+}
+
+.logo-text{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    margin-top: 8px;
+    font-size: 21px;
+}
+
+
+.list-left {
+    float:left;
+}
+
+.list-right {
+    float:right;
+    margin: 0px;
+}
+
+.main-text{
+	text-align: center;
+	margin-top: 120px;
+}
+
+
+.category{
+	display: flex;
+	flex-direction: row;
+	background-color: white;
+	color: black;
+	padding: 21px;
+}
+
+.category div{
+	background: white;
+	width: 220px;
+	height: 220px;
+	margin: auto;
+	border-radius: 10px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.category div img{
+	width: 220px;
+	height: 220px;
+	margin: auto;
+	border-radius: 10px;
+	-webkit-filter: brightness(100%);
+}
+
+.category div img:hover {
+    -webkit-filter: brightness(56%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.lower-section{
+	background: white;
+	background-image: url("../images/lowerback.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: row;
+	color: #212121;
+}
+
+.lower-section div{
+	margin-top: 30px;
+	background: white;
+	margin: auto;
+	width: 300px;
+	height: 300px;
+	border-radius: 35px;
+	text-align: center;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.lower-section p{
+	margin-left: 10px;
+	text-align: left;
+	font-size: 17px;
+
+}
+
+
+.lower-section div button{
+	background-color: white;
+	color: black;
+	border: 2px solid #212121;
+	border-radius: 23px;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 30px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	margin-top: 30px;
+	font-family: 'Lato', sans-serif;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.lower-section div button:hover{
+	background-color: #212121;
+	color: white;
+}
+
+
+footer{
+	text-align: center;
+	background-color: white;
+	padding: 12px;
+	padding-bottom: 14px;
+	bottom: 0;
+}

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block title %}Log In{% endblock %}
+{% block link %}
+<link rel="icon" href="{{url_for('static', filename='images/logo.png')}}">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'styles/styles-login.css')}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block logo %}<a href="/" class="logo-text">TechSpecs</a>{% endblock %}
+{% block body %}
+
+<div class="register-div">
+    <h1>Log In</h1>
+    <form class="log-in" action="" method="post">
+        {{ login_form.hidden_tag() }}
+        <p>
+            {{ login_form.username_login.label }}<br>
+            {{ login_form.username_login(size=32,placeholder="Username") }}<br>
+            {% for error in login_form.username_login.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+
+        <p>
+            {{ login_form.password.label }}<br>
+            {{ login_form.password(size=32,placeholder="Enter Password") }}<br>
+            {% for error in login_form.password.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>{{ login_form.submit() }}</p>
+    <p>Have not account yet?<a href="/register"> Sign Up!</a></p>
+</div>
+
+{% endblock %}

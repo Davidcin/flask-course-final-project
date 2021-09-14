@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block link %}
+
+<link rel="icon" href="{{url_for('static', filename='images/logo.png')}}">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'styles/styles.css')}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+{% endblock%}
+
+{% block logo %}
+<a href="/"><img src="../static/images/logo.png" class="logo"></a>
+{% endblock %}<
+
+{% block body%}
+
+<header>
+
+
+    <h1 class="main-text"><span id="word">Tech</span> Specs</h1>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="{{url_for('static', filename='scripts/scripts.js')}}"></script>
+</header>
+
+<section class="category">
+        <div><a href="/iphone"><img src="{{url_for('static', filename='images/phones.jpg')}}"></a></div>
+        <div><a href="#"><img src="{{url_for('static', filename='images/cpu.jpg')}}"></a></div>
+        <div><a href="#"><img src="{{url_for('static', filename='images/gpu.jpg')}}"></a></div>
+        <div><a href="#"><img src="{{url_for('static', filename='images/laptops.jpg')}}"></a></div>
+</section>
+
+<section class="lower-section">
+    <div>
+        <h1>You Can Search Items!</h1>
+        <a href="/search"><button class="btn">Search</button></a>
+    </div>
+    <div>
+        <h1>Current Top:</h1>
+        <p>Phone: <strong>Oneplus 9 Pro</strong></p>
+        <p>Processor: <strong>AMD Ryzen 9 5950X</strong></p>
+        <p>Videocard: <strong>RTX 3090</strong></p>
+        <p>Laptop: <strong>Asus ROG Zephyrus G15</strong></p>
+    </div>
+    <div><h1>You Can Add New Items!</h1>
+        <a href="/additem"><button class="btn">Add New</button></a>
+    </div>
+
+</section>
+
+{% endblock %}

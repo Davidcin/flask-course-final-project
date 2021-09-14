@@ -1,0 +1,128 @@
+body{
+	background: #212121;
+	background-image: linear-gradient(#212121, white);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: 'Noto Sans KR', sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+body a:hover{
+	color: silver;
+}
+
+body a:active{
+	color: darkgray;
+}
+
+body a{
+	text-decoration: none;
+}
+
+h1{
+	text-align: center;
+}
+
+.first-h1{
+	color: whitesmoke;
+}
+
+.navbar{
+	height: 50px;
+}
+
+.navbar ul li{
+	display: inline-block;
+	margin: 0px;
+	margin-top: 8px;
+	padding: 0px 25px;
+	font-size: 21px;
+}
+
+.navbar ul{
+	padding: 0px;
+	margin: 0px;
+}
+
+.navbar a{
+	color: white;
+}
+
+.logo-text{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    margin-top: 8px;
+    font-size: 21px;
+}
+
+
+.list-left {
+    float:left;
+}
+
+.list-right {
+    float:right;
+    margin: 0px;
+}
+
+.about-us-p{
+	text-align: center;
+	color: white;
+	font-size: 21px;
+}
+
+.enjoy{
+	font-size: 26px;
+}
+
+
+hr{
+	border: 0;
+	background-image: linear-gradient(to right, #212121 , white);
+	height: 3px;
+}
+
+.second-h1{
+	color: #212121;
+}
+
+.contact-us-p{
+	color: #212121;
+	text-align: center;
+	font-size: 21px;
+}
+
+.social-nets{
+	display: flex;
+	flex-direction: row;
+	color: black;
+	padding: 21px;
+	margin-bottom: 130px;
+}
+
+.social-nets div{
+	width: 140px;
+	height: 140px;
+	margin: auto;
+	border-radius: 10px;
+}
+
+.social-nets div img{
+	width: 140px;
+	height: 140px;
+	margin: auto;
+}
+
+
+footer{
+	padding: 12px;
+	text-align: center;
+	bottom: 0px;
+}

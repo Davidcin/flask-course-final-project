@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}About Us{% endblock %}
+{% block link %}
+
+<link rel="icon" href="{{url_for('static', filename='images/logo.png')}}">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'styles/styles-about.css')}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+{% endblock %}
+{% block logo %}<a href="/" class="logo-text">TechSpecs</a>{% endblock %}
+{% block body %}
+
+<h1 class="first-h1">About Us</h1>
+<div class="about-us-p">
+	<p>This website was made by Georgian developer <strong>David Tsintskiladze</strong> for Flask Course final project.<br>Whole back-end was written on Python programming language's micro framework Flask.<br>
+	In "TechSpecs" you can find techinacal specifications of many devices and PC parts such as phones, laptops, CPUs and GPUs.<br>You can also register and add liked items to favorites.<br>You can describe an items in the comment section.<br>If you want to help to improve website you can add new items by yourself.<br><strong><span class="enjoy">Enjoy!</strong></span></p>
+</div>
+<hr>
+<h1 class="seccond-h1">Contact Us</h1>
+<div class="contact-us-p"><p>Liked my project? You can contact me for business inquiries!</p></div>
+
+<section class="social-nets">
+	<div><a href="https://github.com/Davidcin" target="_blank"><img src="../static/images/github.png"></a></div>
+	<div><a href="https://www.linkedin.com/in/david-tsintskiladze-6bba05211" target="_blank"><img src="../static/images/linkedin.png"></a></div>
+	<div><a href="https://www.reddit.com/u/Davidcin?utm_medium=android_app&utm_source=share" target="_blank"><img src="../static/images/reddit.png"></a></div>
+	<div><a href="https://www.youtube.com/channel/UCsfobjkfu9x6emoFufsyv_A" target="_blank"><img src="../static/images/youtube.png"></a></div>
+	<div><a href="https://twitter.com/Davidcin10?s=09" target="_blank"><img src="../static/images/twitter.png" target="_blank"></a></div>
+</section>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Not Logged{% endblock %}
+{% block link %}
+<link rel="icon" href="{{url_for('static', filename='images/logo.png')}}">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'styles/styles-register.css')}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block logo %}<a href="/" class="logo-text">TechSpecs</a>{% endblock %}
+{% block body %}
+
+<h1>You are not logged</h1>
+
+{% endblock %}

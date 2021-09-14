@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>TechSpecs - {% block title %}{% endblock %}</title>
+        {% block link %}{% endblock%}
+    </head>
+    <body>
+        <nav class="navbar">
+            <ul>
+                <div class="list-left">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About Us</a></li>
+                </div>
+                {% block logo %}{% endblock %}
+                <div class="list-right">
+                    {% if current_user.is_authenticated %}
+                    <li><a href="/profile">Profile</a></li>
+                    <li><a href="/logout">Log Out</a></li>
+                    {% else %}
+                    <li><a href="/login">Log In</a></li>
+                    <li><a href="/register">Sign Up</a></li>
+                    {% endif %}
+                </div>
+            </ul>
+        </nav>
+        {% block body %}{% endblock %}
+        <footer>Copyright © 2021 Davidcin. All rights reserved.</footer>
+    </body>
+</html>

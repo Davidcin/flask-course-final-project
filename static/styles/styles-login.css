@@ -1,0 +1,88 @@
+body{
+	background: #212121;
+	background-image: linear-gradient(#212121, white);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: 'Noto Sans KR', sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+body a:hover{
+	color: silver;
+}
+
+body a:active{
+	color: darkgray;
+}
+
+body a{
+	text-decoration: none;
+}
+
+h1{
+	text-align: center;
+	color: white;
+}
+
+
+.register-div{
+	text-align: center;
+}
+
+
+.first-h1{
+	color: whitesmoke;
+}
+
+.navbar{
+	height: 50px;
+}
+
+.navbar ul li{
+	display: inline-block;
+	margin: 0px;
+	margin-top: 8px;
+	padding: 0px 25px;
+	font-size: 21px;
+}
+
+.navbar ul{
+	padding: 0px;
+	margin: 0px;
+}
+
+.navbar a{
+	color: white;
+}
+
+.logo-text{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    margin-top: 8px;
+    font-size: 21px;
+}
+
+
+.list-left {
+    float:left;
+}
+
+.list-right {
+    float:right;
+    margin: 0px;
+}
+
+
+
+footer{
+	padding: 12px;
+	text-align: center;
+	bottom: 0px;
+}

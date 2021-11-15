@@ -13,3 +13,5 @@ THIS PROJECT IS NOT FINISHED YET. THERE WILL BE SOME NEW FEATURES AND IMPROVEMEN
 Will be added:
 1) Search
 2) "Add new items" feature
+
+https://techspecs.herokuapp.com/
